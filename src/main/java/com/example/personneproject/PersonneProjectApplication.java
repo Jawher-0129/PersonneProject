@@ -25,6 +25,9 @@ public class PersonneProjectApplication {
             personneService.createPersonne(p1);
             personneService.createPersonne(p2);
             personneService.createPersonne(p3);
+            System.out.println("ajout effectuée");
+
+            
 
             // Afficher toutes les personnes
             System.out.println("Liste des personnes après ajout :");
