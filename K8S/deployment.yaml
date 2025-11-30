@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: personne-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: personne
+  template:
+    metadata:
+      labels:
+        app: personne
+    spec:
+      containers:
+        - name: personne-container
+          image: jawhertb/personneproject:latest
+          ports:
+            - containerPort: 8080
