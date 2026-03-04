@@ -19,7 +19,6 @@ public class PersonneService {
         Personne p = personneMap.get(id);
         if (p == null) {
             System.out.println("Personne non trouvée avec id " + id);
-            System.out.println("erreur 3");
         }
         return p;
     }
